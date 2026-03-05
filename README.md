@@ -1,9 +1,10 @@
--------|-----------------------|--------------------------------|
-Method | Endpoint              | Description                    | 
------- | ----------------------|--------------------------------|
-GET    | /api/assignments      | Get all assignments            | 
-POST   | /api/assignments      | Creates a new assignment       |
-GET    | /api/assignments/{id} | Get assignment by ID           |
-PUT    | /api/assignments/{id} | Updates an assignment by ID    |
-DELETE | /api/assignments/{id} | Deletes an assignment by ID    |
--------|-----------------------|--------------------------------|
+# This is a local API created in Express for an assignment.
+### Below is the routing design of the API.
+
+Method | Endpoint | Request Body | Response Body |
+|--------|----------|--------------|---------------|
+| GET | /api/assignments | None | `[{ id, title, description }]` |
+| POST | /api/assignments | `{ title, description }` | `{ id, title, description }` |
+| GET | /api/assignments/{id} | None | `{ id, title, description }` |
+| PUT | /api/assignments/{id} | `{ title, description, dueDate }` | `{ id, title, description }` |
+| DELETE | /api/assignments/{id} | None | None 
