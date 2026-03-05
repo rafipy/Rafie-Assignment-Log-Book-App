@@ -1,4 +1,5 @@
-## Assignments API
+# This is a local API created in Express for an assignment.
+### Below is the routing design of the API.
 
 Method | Endpoint              | Description                 | Request Body                                              | Response Body
 ------ | --------------------- | --------------------------- | --------------------------------------------------------- | -------------------------------------------------------
